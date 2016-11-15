@@ -17,11 +17,8 @@ https://github.com/kubernetes/kubernetes/tree/release-1.3/examples/cassandra
 # Start minikube
 minikube start
 
-# create a service to track all cassandra nodes
-kubectl create -f cassandra-service.yaml
-
-# create a replication controller to replicate cassandra nodes
-kubectl create -f cassandra-controller.yaml
+# create a service and replication controller
+kubectl create -f cassandra-cluster.yaml
 ```
 
 ## Check that cluster started correct
@@ -56,6 +53,7 @@ No events.
 
 # check address of master host
 kubectl cluster-info
+
 Kubernetes master is running at https://192.168.99.100:8443
 KubeDNS is running at https://192.168.99.100:8443/api/v1/proxy/namespaces/kube-system/services/kube-dns
 kubernetes-dashboard is running at https://192.168.99.100:8443/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard
