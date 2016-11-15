@@ -4,6 +4,11 @@
 
 <!-- END MUNGE: UNVERSIONED_WARNING -->
 
+## This is fork from kubernets/examples/cassandra
+https://github.com/kubernetes/kubernetes/tree/release-1.3/examples/cassandra
+
+## Service uses type=NodePort to simulate load balancing
+
 # Cloud Native Deployments of Cassandra using Kubernetes
 
 ## Table of Contents
